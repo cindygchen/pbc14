@@ -1,0 +1,1199 @@
+@font-face {
+	font-family: 'Conv_TrendHMSansOne';
+	src: url('fonts/TrendHMSansOne.eot');
+	src: local('☺'), url('fonts/TrendHMSansOne.woff') format('woff'), url('fonts/TrendHMSansOne.ttf') format('truetype'), url('fonts/TrendHMSansOne.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_TrendHMSlabFive';
+	src: url('fonts/TrendHMSlabFive.eot');
+	src: local('☺'), url('fonts/TrendHMSlabFive.woff') format('woff'), url('fonts/TrendHMSlabFive.ttf') format('truetype'), url('fonts/TrendHMSlabFive.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_TrendHMSlabOne';
+	src: url('fonts/TrendHMSlabOne.eot');
+	src: local('☺'), url('fonts/TrendHMSlabOne.woff') format('woff'), url('fonts/TrendHMSlabOne.ttf') format('truetype'), url('fonts/TrendHMSlabOne.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body{
+    color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gentium Book Basic', serif;
+    color:#101010;
+    min-height: 100%;
+    height: 100%;
+    max-width:100%;
+    text-align: left;
+    position: absolute;
+
+}
+
+html{
+    min-height: 100%;
+    height: 100%;
+    text-rendering: optimizelegibility;
+}
+
+a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.sectiontitle{
+    font-family: 'Conv_TrendHMSlabFive';
+    text-align:center;
+    width: 100%;
+    font-size: 145px;
+    margin-top:0;
+    margin-bottom:0px;
+    padding-top: 125px;
+    padding-bottom: 115px;
+    color: #DAA520;
+}
+
+p{
+    font-family: 'Gentium Book Basic', serif;
+}
+
+/* First Navigation Bar */
+#firstnav{
+    padding-top: 25px;
+    top: 0px;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    overflow:visible;
+}
+
+.firstnavcontainer{
+    width: 67%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.firstnav-elements{
+    position: relative;
+    list-style:none;
+    padding: 0;
+    height: auto;
+    margin:0;
+}
+
+.firstnav-elements li{
+    display: inline-block;
+    height: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.firstnav-elements a{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Conv_TrendHMSlabOne';
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    width: auto;
+}
+
+.firstnav-elements li:nth-child(2) a{
+    letter-spacing: 0.5px;
+}
+
+.firstnav-elements a:hover{
+    color: #DAA520;
+    transition:.3s ease-in-out;
+}
+
+#navcontainer .container .firstnav-elements{
+    display: none;
+}
+
+/* Navigation Bar - Fixed*/
+#nav{
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    left: 0;
+    overflow:visible;
+    top: 0px;
+    position: fixed;
+    z-index: 10000;
+}
+
+#nav .container{
+    height:120px;
+    margin: 0 auto;
+    position: relative;
+    overflow:hidden;
+    
+}
+
+#nav.fixed{
+    position:fixed;
+    top: 0;
+    background-color: #000;
+} 
+
+
+/*navbar element placements within navbar*/
+
+#nav-left{
+    position: relative;
+    top: 35px;
+    left: 0;
+    float: left;
+    list-style:none;
+    padding: 0;
+}
+
+#nav-right{
+    position: relative;
+    top: 35px;
+    float:left;
+    list-style:none;
+    padding: 0;
+}
+
+#nav-left li, #nav-right li{
+    display: inline-block;
+    height: 20px;
+}
+
+#nav-left a, #nav-right a{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'Conv_TrendHMSlabOne';
+    letter-spacing: 1.2px;
+    vertical-align: middle;
+    padding-bottom: 3px;
+}
+
+
+.active{
+    color: #DAA520;
+}
+
+#nav-left a:hover, #nav-right a:hover{
+    color: #DAA520;
+    transition:.3s ease-in-out;
+}
+
+#logo{
+    height: 110px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:50%;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+} 
+
+.activenavcontainer{
+    background-color: #162128;
+    transition:.3s ease-in-out;
+
+}
+
+.displaynone{
+    display: none;
+}
+
+header{
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#shadow{
+    background: url(../img/shadow.png) center top repeat-x;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    height: 186px;
+}
+
+#net{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    background: url(../img/net_2.png) repeat;
+}
+
+/*conact info footer*/
+#contactinfo{
+    width: 100%;
+    background: #000;
+    overflow:visible;
+    bottom: 0px;
+    position: absolute;
+    z-index: 3;
+    padding-top:15px;
+    padding-bottom: 15px;
+    float:left;
+}
+
+.contactcontainer {
+    height: 100%;
+    width: 75%;
+    margin: auto;
+    position: relative;
+    
+}
+
+.contactcontentcontainer{
+    margin: auto;
+    width: 80%;
+    vertical-align:middle;
+    padding-top: 8px;
+}
+#contactaddress .contactcontentcontainer{
+    text-align: center;
+    }
+
+#contactsocialmedia .contactcontentcontainer{
+    margin: 0 auto;
+    padding-left: 25px;
+    text-align: justify;
+}
+
+#contactaddress, #contacthours, #contactsocialmedia{
+    float:left;
+    width:33%;
+    position: relative;
+    font-family:'Conv_TrendHMSansOne';
+    color:#fff;
+    text-align: justify;
+    border-right:1px solid #bc9321;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+#contactsocialmedia{
+
+    border-right: none;
+
+}
+
+#contactsocialmedia img{
+    height: 60px;
+
+}
+
+
+
+/*Home and Banner Content*/
+#home{
+    width: 100%;
+    height: 100%;
+    background-image:url(../img/waves.gif); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    float:left;
+    position: relative;
+}
+
+#bannercontainer{
+    top: 0;
+    left:0;
+    right: 0; 
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    position: absolute;
+}
+
+#bannercontainer img{
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; 
+
+}
+
+#greeting{
+    margin: 0px auto;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 3;
+    height: 50%;
+}
+
+#greeting img{
+    height: 100%;
+}
+
+#greeting h1{
+    font-size: 200px;
+    margin-top: 0px;
+    font-family: 'Conv_Pinto No_01';
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+/*Philosophy*/
+#philosophy{
+    width: 100%;
+    height: auto;
+    float:left;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    position: relative;
+        background: transparent url(../img/review_back.gif) repeat 0 0;
+
+    /*background-color: #bc9321;*/
+    background-repeat: repeat;
+}
+
+#philosophy h1{
+    font-family: 'Conv_TrendHMSlabFive';
+    font-size:50px;
+    line-height: 55px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#philosophy h4{
+    font-family: 'Conv_TrendHMSansOne';
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 17px;
+    letter-spacing: 1px;
+}
+
+#philosophy p{
+    font-family: 'Gentium Book Basic', serif;
+    font-size:16px;
+    line-height: 25px;
+    margin-bottom: 0px;
+    letter-spacing: .8px;
+    overflow: hidden;
+}
+
+
+#philosophy .container{
+    width:  75%;
+    height:auto;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+/*Beers*/
+
+.beersectiontitle{
+    width: 100%;
+    background-image: url("../img/gallery_7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#beers{
+    width: 100%;
+    float: left;
+    position: relative;
+    background-color: floralwhite;
+}
+
+
+#netbeer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    top:0;
+    background-color: rgba(0,0,0,0.35);
+}
+#beersabout{
+    width: 100%;
+    height: 92%%;
+    float:left;
+    position: relative;
+    background-image: url("../img/flight.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F5F5F5;
+    z-index: 2;
+}
+
+#beers .container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.beerbackground{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    margin:0;
+    float:left;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-color:white;
+}
+
+#beerlist{
+    list-style: none;
+
+}
+
+#beerlist{
+    font-family: 'Conv_TrendHMSansOne';
+    font-size: 18px;
+    padding-left: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#beerlist li{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.hide{
+    display:none;
+}
+
+.beerinfo h3{
+    font-family: 'Conv_TrendHMSansOne';
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.waves{
+    width: 122px;
+    margin: 0 auto;
+}
+
+
+.beerp{
+    font-size:20px;
+    line-height: 29px;
+    letter-spacing: 1.5px;
+}
+.miscinfo{
+    font-size:18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.activebeer{
+    border: 2px solid #bc9321;
+    padding: 8px;
+}
+
+
+
+/*About*/
+
+.brewerssectiontitle{
+    width: 100%;
+    background-image: url("../img/aboutus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#brewers{
+    width: 100%;
+    float:left;
+    position: relative;
+}
+
+#aboutthem{
+    background: transparent url(../img/review_back.gif) repeat 0 0;
+    height:auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.biographies{
+    width: 45%;
+    height: auto;
+    text-align: center;
+    position:relative;
+    float:left;
+    margin-left:1%;
+    margin-right: 1%;
+    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.biographies h1{
+    font-family: 'Conv_TrendHMSlabOne';
+    color: #bc9321;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.biographies p{
+    line-height: 25px;
+    text-align: left;
+}
+
+
+#about .container{
+    position: relative;
+}
+#about .sectiontitle{
+    position: relative;
+}
+
+#about .titleunderline{
+    position:relative;
+    z-index:10;
+}
+
+/*TapRoom*/
+.tapsectiontitle{
+    width: 100%;
+    background-image: url("../img/gallery_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#taproom{
+    background: transparent url(../img/review_back.gif) repeat 0 0;
+    width: 100%;
+    height: 150%;
+    float:left;
+    position: relative;
+}
+
+
+
+/*Events*/
+
+.eventssectiontitle{
+    width: 100%;
+    background-image: url("../img/pacificevents.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#events{
+    width: 100%;
+    height: auto;
+    background-repeat: repeat;
+    float:left;
+    position: relative;
+    padding-bottom: 80px;
+    color: #ecead2;
+    background: transparent url(../img/events_background.jpg) repeat 0 0;
+    font-family: 'Conv_TrendHMSansOne';
+}
+
+
+#calendarofevents{
+    margin-top: 50px;
+}
+
+.eventactive{
+    color: #bc9321;
+    font-size: 18px;
+    margin-right: 10px;
+    float:left;
+
+}
+
+.time{
+    border-left: 1px solid #ecead2;
+    font-size: 18px;
+    padding-left: 17px;
+    float: left;
+    color: #ecead2;
+    font-family: 'Conv_TrendHMSansOne';
+}
+
+.button{
+    border: 1px solid #bdbdbd;
+    border-radius:3px;
+    color: #ecead2;
+    float:left;
+}
+
+
+#events .container{
+    overflow: visible;
+}
+
+
+#events h2{
+    font-family: 'Conv_TrendHMSansOne';
+    font-size: 30px;
+    margin-top: 13px;
+    margin-bottom: 45px;
+    width: auto;
+    float:left;
+    clear:both;
+    color: #ecead2;
+}
+
+ .button{
+    padding: 10px 30px;
+    float:right;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#paragraph{
+    margin: 30px auto;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 60%;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+
+.button:hover{
+    color: #bc9321;
+    border-color: #bc9321;
+    transition:.3s ease-in-out;
+}
+
+#contactbutton{
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    border-color: #bc9321;
+    clear:both;
+}
+
+.classbutton{
+    margin: 0 auto;
+    width: 205px;
+}
+#contactbutton:hover{
+    background-color: #bc9321;
+    transition:.3s ease-in-out;
+    color: #101010;
+}
+
+
+.event{
+    float:left;
+    width: 100%;
+    border-bottom: 1px solid #1a1b1b;
+    margin-bottom: 40px;
+    color: #101010;
+}
+
+#event .sectiontitle{
+    margin-top: 50px
+}
+
+.event h3{
+    font-family: 'Conv_TrendHMSansOne';
+}
+
+.event p{
+    line-height: 28px;
+    font-size: 19px;
+}
+
+#hostevent{
+    font-family: 'Conv_TrendHMSansOne';
+    color: #DAA520;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+button:active, button{
+    border: 1px solid #101010;
+}
+
+
+/*Find Us*/
+.visitsectiontitle{
+    width: 100%;
+    background-image: url("../img/gallery_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#visit{
+    width: 100%;
+    float:left;
+    position: relative;
+}
+
+#visit #visitinfo{
+    padding-top: 60px;
+    padding-bottom:60px;
+    background: transparent url(../img/review_back.gif) repeat 0 0;
+    font-family: 'Conv_TrendHMSansOne';
+}
+
+.visitinfomess{
+    font-size:30px;
+    font-family: 'Conv_TrendHMSansOne';
+}
+
+
+.visitinformation{
+    width: 48%;
+    height: auto;
+    text-align: center;
+    position:relative;
+    float:left;
+    margin-right:1px;
+}
+
+
+#visit #map{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#visit #map_container{
+    position: relative;
+    height: 100%;
+}
+
+#visit .mapcontainer{
+    width:100%;
+    height: 500px;
+    margin: 0;
+    float:left;
+}
+
+
+
+
+#hours, #location{
+    background-color: #F5F5F5;
+    border:1px solid #101010;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+    width: 170px;
+    font-family: 'gafata';
+    font-size: 14.5px;
+    line-height: 20px;
+    position: relative;
+}
+
+
+#hours h4, #location h4{
+    margin: 0pc;
+}
+
+
+
+
+/*Footer*/
+/*conact info footer*/
+footer{
+    text-align: left;
+    width: 100%;
+    height: 35px;
+    background: #101010;
+    overflow:visible;
+    bottom: 0px;
+    position: relative;
+    float:left;
+    z-index: 5;
+    padding-top:18px;
+    margin: 0;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+
+footer p{
+    margin: 0;
+    font-size: 16px;
+    padding:0;
+}
+
+.title.underline{
+    border-top: 4px solid #DAA520;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* SMall Computer */
+@media screen and (max-width : 1080px) {
+
+    #contactsocialmedia img{
+        height: 48px;
+    }
+    
+    #contactaddress, #contacthours, #contactsocialmedia{
+        font-size: 11px;
+    }
+    
+    #nav-left a, #nav-right a{
+        font-size: 12px;
+    }
+    
+    .container, .contactcontainer, #philosophy .container{
+        width: 85%;
+    }
+    
+    .biographies{
+        margin-right: 10px;
+    }
+    
+    .sectiontitle{
+        font-size: 100px
+    }
+    
+    .contactcontentcontainer{
+        width: 90%;
+    }
+    
+    #nav-left a, #nav-right a{
+        font-size: 11px;
+    }
+    
+    #events h2{
+        width: 70%;
+    }
+}
+
+
+
+/* Tablet */
+@media screen and (max-width : 800px) {
+        .fixed{
+        display: none !important;
+    }
+    
+    
+    #greeting{
+        top: 300px;
+        height: 500px;
+    }
+    
+    #greeting img{
+        height: auto;
+    }
+    
+ #contactaddress, #contacthours, #contactsocialmedia{
+        border-right: none;
+        border-bottom: 1px solid #DAA520;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .contactcontentcontainer{
+        padding:0;
+    }
+    
+    #home{
+        height: auto;
+    }
+    
+    #contactinfo{
+        bottom: auto;
+        position: relative;
+    }
+    
+    #contactsocialmedia{
+
+        border-bottom: none;
+
+    }
+    
+    #bannercontainer img{
+        right: -10%;
+        min-height: 80%;
+    }
+    
+    .contactcontentcontainer{
+        
+        width: 50%;
+        
+    }
+    
+    #contactsocialmedia .contactcontentcontainer{
+        text-align: center;
+        padding-left: 0px;
+    }
+    
+    #nav-left, #nav-right{
+        display: none;
+    }
+    
+    #logo{
+        float: none;
+    }
+    
+    .container, .contactcontainer, #philosophy .container{
+        width: 85%;
+    }
+    
+    #beermenu{
+        width: 90%;
+    }
+    
+    #beerlist li{
+        text-align: center;
+
+    }
+    
+    .beerinfo{
+        width: 100%;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    
+    .beerp{
+        text-align: justify;
+    }
+    
+    .sectiontitle{
+        font-size: 70px;
+    }
+    33
+    .brewerssectiontitle{
+        background-position-y: 0;
+    }
+    
+    #philosophy h1{
+        font-size: 35px;
+    }
+    
+    .biographies{
+        width: auto;
+        text-align: center;
+    }
+    
+    #events h2{
+        width: auto;
+        text-align: center;
+    }
+    
+    .visitinformation{
+        width: 100%;
+    }
+    
+    
+    .eventbutton{
+        width: 200px;
+        margin: 0 auto;
+    }
+    
+    .event{
+        padding-bottom: 40px;
+    }
+    
+        .navbar{
+        top: 0;
+width: 100%;
+position: relative;
+float: left;
+background-color: #fff;
+z-index: 1;
+    }
+    
+    .navigation{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .navigation.js {
+			display: none;
+        margin: 0;
+		}
+    
+        .navigation2{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .navigation2.js {
+			display: none;
+        margin: 0;
+		}
+    
+    .firstnav-elements li{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    
+    
+    #nav-left li, #nav-right li{
+        display: none
+    }
+    
+    #menu {
+            width:1.9em;
+			display: block;
+			font-size:1.7em;
+			text-align: center;
+            float: right;
+            margin-top: 15px;
+            width: 10%
+		}
+    
+    #menu img{
+        width: 100%;
+    }
+    
+        #menu2 {
+            width:1.9em;
+			display: block;
+			font-size:1.7em;
+			text-align: center;
+            float: right;
+            margin-top: 15px;
+            width: 10%
+		}
+    
+    #menu2 img{
+        width: 100%;
+    }
+    
+    #greeting{
+        height: 500px;
+        float:left;
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+/* Phone */
+@media screen and (max-width : 480px) {
+    .sectiontitle {
+        font-size: 50px;
+    }
+    
+    
+    .contactcontentcontainer{
+        width: 80%;
+    }
+    
+    .time{
+        float:none;
+    }
+
+    #hostevent{
+        font-size: 40px;
+    }
+    
+    #contactaddress, #contacthours, #contactsocialmedia{
+        border-right: none;
+        border-bottom: 1px solid #DAA520;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .contactcontentcontainer{
+        padding:0;
+    }
+    
+    #home{
+        height: auto;
+    }
+    
+    #contactinfo{
+        bottom: auto;
+        position: relative;
+    }
+    
+    #contactsocialmedia{
+
+        border-bottom: none;
+
+    }
+    
+    #bannercontainer img{
+        right: -10%;
+        min-height: 80%;
+    }
+
+    
+    #contactsocialmedia .contactcontentcontainer{
+        text-align: center;
+        padding-left: 0px;
+    }
+    
+    
+}
+
+@media screen and (min-width : 800px) {
+
+    #menu{
+    display: none;
+    }
+    
+    #menu2{
+    display: none;
+    }
+    
+    
+
+}
+
+
+
+
+
